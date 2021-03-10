@@ -204,6 +204,9 @@
         [_failureImgView sizeToFit];
         
         _failureImgView.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height * 0.5);
+        _failureImgView.bounds = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 282);
+        _failureImgView.contentMode = UIViewContentModeScaleAspectFill;
+
     }
     return _failureImgView;
 }
