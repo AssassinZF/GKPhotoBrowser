@@ -239,6 +239,7 @@
                             }else {
                                 [strongSelf addSubview:strongSelf.loadingView];
                                 [strongSelf.loadingView showFailure];
+                                !strongSelf.loadFailed ? : strongSelf.loadFailed(self);
                             }
                         }
                     }else {
